@@ -1,0 +1,50 @@
+Cortaillod * municipality * district * Boudry * canton * Neuchâtel * Switzerland
+Pinot Noir * region * Cortaillod * label
+Auvernier|Bevaix|Bôle|Boudry|Brot-Dessous|Colombier|Corcelles-Cormondrèche|Cortaillod|Fresens|Gorgier|Montalchez|Peseux|Rochefort|Saint-Aubin-Sauges|Vaumarcus
+Canton * Neuchâtel| Districts * Canton * Neuchâtel| * Municipalities * canton * Neuchâtel
+use of templates * metaprogramming * technique * two * distinct operations * template
+template
+template definition * generic form * generated source code * instantiation * specific set of source code
+specific set of source code * generic form * template
+Template * metaprogramming * Turing-complete * computation * computer program
+form * metaprogram
+Templates * macros
+macro * language feature * manipulation * substitution
+Macro * systems * compile-time process flow * abilities * awareness * semantics * type system
+semantics * type system * companion * language * exception * Lisp * macros * Lisp
+Lisp * simple text manipulation * substitution
+Template * metaprograms * variables * change value
+template metaprogramming * form of functional programming
+fact * template * implementations * flow control * recursion * example
+syntax * template * metaprogramming * programming language
+practical uses
+common reasons * use templates * programming * sections of code
+sections of code * minor variations * compile-time optimization * something * compile time
+compile time * time * program * instance * compiler * unroll * jumps
+jumps * loop count * decrements * program
+means * example * factorial function
+factorial function * C++ * using recursion
+int * factorial * int n * 0 * return * 1 * return
+1 * return * 1
+void * foo * int * x * 4 * 4 * 3
+4 * 3 * 2 * 1 * 1 * 24int y * 24int * factorial * 0 * 0
+1
+code * program * factorial value * literals * 4
+literals * 4 * 0
+template metaprogramming * specialization * condition * recursion * factorials
+recursion * factorials * program * compile-time
+template * struct * Factorial * enum * value * N * Factorial
+template * & gt;struct Factorial0&gt * value * 1
+Factorial4 * gt * 24// Factorial0 * 24// * gt * 1void foo * 1void
+1void foo * 1void * int * x * Factorial4 * gt * :value * 24int y * 24int * Factorial0 * gt
+Factorial0 * gt * :value * 1
+code * factorial value * literals * 4 * 0 * compile time * result
+compile time * result * constants
+two * versions * point of view * program * functionality * first example
+functionality * first example * factorials * run time * compile time
+use templates * manner * compiler * value
+value * parameters * compile time * natural precondition * FactorialX&gt;::value
+FactorialX&gt;::value * X * compile time
+words * X * literal * constant expression * using sizeof operator
+factorial example * one * example * code optimization * factorials * program
+program * numeric constants * compilation * run-time overhead * memory footprint

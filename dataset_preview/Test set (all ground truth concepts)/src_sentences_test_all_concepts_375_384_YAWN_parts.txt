@@ -1,0 +1,25 @@
+Bar Talk is an album by jazz musician John Scofield.
+John Scofield (electric guitar); Steve Swallow (bass); Adam Nussbaum (drums).
+This album was released on the Japanese subsidiary record label Novus, it was never released in the United States.
+Once in the States, he paired up with Renée Roca with the intention of skating professionally with her.
+When the International Skating Union allowed pros to reinstate, Roca and Sur did and they won two U.S. National titles.
+After retiring from competitive skating, Roca and Sur toured with Stars on Ice.
+1936: Marjorie Parker / Joseph Savage· 1937–1938: Nettie Prantell / Harold Hartshorne· 1939–1941: Sandy MacDonald / Harold Hartshorne· 1942: Edith Whetstone / A.L.
+Richards· 1943–1944: Marcella May / James Lochead· 1945: Kathe Mehl Williams / Robert Swenning· 1946: Anne Davies / Carleton Hoffner· 1947–1949: Lois Waring / Walter Bainbridge· 1950: Lois Waring / Michael McGean· 1951: Carmel Bodel / Edward Bodel· 1952: Lois Waring / Michael McGean· 1953: Carol Ann Peters / Daniel Ryan· 1954–1955: Carmel Bodel / Edward Bodel· 1956: Joan Zamboni / Roland Junso· 1957: Sharon McKenzie / Bert Wright· 1958–1959: Andree Anderson / Donald Jacoby· 1960: Margie Ackles / Charles Phillips· 1961: Diane Sherbloom / Larry Pierce· 1962: Yvonne Littlefield / Peter Betts· 1963: Sally Schantz / Stanley Urban· 1964: Darleen Streich / Charles Fetter· 1965–1966: Kristin Fortune / Dennis Sveum· 1967: Lorna Dyer / John Carrell· 1968–1972: Judy Schwomeyer / James Sladky· 1973: Mary Campbell / Johnny Johns· 1974–1976: Colleen O'Connor / Jim Millns· 1977: Judi Genovese / Kent Weigle· 1978–1980: Stacey Smith / John Summers· 1981–1985: Judy Blumberg / Michael Seibert· 1986: Renee Roca / Donald Adair· 1987–1988: Suzanne Semanick / Scott Gregory· 1989–1990: Susan Wynne / Joseph Druar· 1991: Elizabeth Punsalan / Jerod Swallow· 1992: April Sargent Thomas / Russ Witherby· 1993: Renee Roca / Gorsha Sur· 1994: Elizabeth Punsalan / Jerod Swallow· 1995: Renee Roca / Gorsha Sur· 1996–1998: Elizabeth Punsalan / Jerod Swallow· 1999–2003: Naomi Lang / Peter Tchernyshev· 2004–2008: Tanith Belbin / Benjamin Agosto
+Pete Seeger, collecting labor union songs, learned "Which Side Are You On" in 1940.
+The following year, it was recorded by the Almanac Singers in a version that gained a wide audience.
+More recently, Billy Bragg, Dropkick Murphys, and Natalie Merchant each recorded their own interpretations of the song.
+Florence Reese appeared in the Academy Award-winning documentary film, Harlan County, USA, singing her anthem to rally the striking miners.
+After a lifetime of speaking out on behalf of unions and social welfare issues, Florence Reese died of a heart attack in 1986 at the age of 86 in Knoxville, Tennessee.
+There are two basic ways to design the channel code and protocol for an error correcting system:
+The combination is called hybrid automatic repeat-request.
+In telecommunication, a redundancy check is extra data added to a message for the purposes of error detection.
+Most codes are "systematic": the transmitter sends a fixed number of original data bits, followed by fixed number of check bits (usually referred to as redundancy in the literature) which are derived from the data bits by some deterministic algorithm.
+Main article: Parity bitA parity bit is an error detection mechanism that can only detect an odd number of errors.
+If the tested blocks overlap, then the parity bits can be used to isolate the error, and even correct it if the error affects a single bit: this is the principle behind the Hamming code.
+Main article: ChecksumA checksum of a message is an arithmetic sum of message code words of a certain word length, for example byte values, and their carry value.
+Checksum schemes include parity bits, check digits, and longitudinal redundancy check.
+If we want to detect d bit errors in an n bit word we can map every n bit word into a bigger n+d+1 bit word so that the minimum Hamming distance between each valid mapping is d+1.
+Any hash function can be used as a redundancy check.
+Other types of redundancy check include horizontal redundancy check, vertical redundancy check and RAID#Non-standard_levels "double", "dual" or "diagonal" parity (used in Raid-DP).
+However, at the physical layer in the OSI model, this scheme can aid in error correction and detection.

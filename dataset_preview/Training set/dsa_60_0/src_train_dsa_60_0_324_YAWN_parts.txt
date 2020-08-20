@@ -1,0 +1,50 @@
+Cortaillod NNP is VBZ a DT municipality NN in IN the DT district NN of IN Boudry NNP in IN the DT canton NN of IN Neuchâtel NNP in IN Switzerland NNP . .
+Pinot NNP Noir NNP from IN this DT region NN is VBZ commonly RB bottled VBN under IN the DT Cortaillod NNP label NN . .
+Auvernier|Bevaix|Bôle|Boudry|Brot-Dessous|Colombier|Corcelles-Cormondrèche|Cortaillod|Fresens|Gorgier|Montalchez|Peseux|Rochefort|Saint-Aubin-Sauges|Vaumarcus NN
+Canton NNP of IN Neuchâtel| NNP Districts NNP of IN Canton NNP Neuchâtel| NNP Municipalities NNP of IN the DT canton NN of IN Neuchâtel NNP
+The DT use NN of IN templates NNS as IN a DT metaprogramming NN technique NN requires VBZ two CD distinct JJ operations NNS : : a DT template NN must MD be VB defined VBN , , and CC
+must MD be VB defined VBN , , and CC a DT defined JJ template NN must MD be VB instantiated VBN . .
+The DT template NN definition NN describes VBZ the DT generic JJ form NN of IN the DT generated VBN source NN code NN , , and CC the DT instantiation NN causes VBZ a DT specific JJ set NN of IN source NN code NN
+specific JJ set NN of IN source NN code NN to TO be VB generated VBN from IN the DT generic JJ form NN in IN the DT template NN . .
+Template NNP metaprogramming NN is VBZ generally RB Turing-complete NNP , , meaning VBG that IN any DT computation NN expressible JJ by IN a DT computer NN program NN can MD be VB computed VBN , , in IN
+can MD be VB computed VBN , , in IN some DT form NN , , by IN a DT template JJ metaprogram NN . .
+Templates NNS are VBP different JJ from IN macros NN . .
+A DT macro NN , , which WDT is VBZ also RB a DT compile-time JJ language NN feature NN , , generates VBZ code JJ in-line JJ using VBG text JJ manipulation NN and CC substitution NN . .
+Macro NNP systems NNS often RB have VBP limited VBN compile-time JJ process NN flow NN abilities NNS and CC usually RB lack VBP awareness NN of IN the DT semantics NNS and CC type NN system NN of IN
+semantics NNS and CC type NN system NN of IN their PRP$ companion NN language NN ( ( an DT exception NN should MD be VB made VBN with IN Lisp NNP 's POS macros NN , , which WDT are VBP written VBN in IN Lisp NNP itself PRP
+are VBP written VBN in IN Lisp NNP itself PRP , , and CC is VBZ not RB a DT simple JJ text NN manipulation NN and CC substitution NN ) ) . .
+Template NNP metaprograms NNS have VBP no DT mutable JJ variables NNS that WDT is VBZ , , no DT variable JJ can MD change VB value NN once IN it PRP has VBZ been VBN initialized VBN , ,
+it PRP has VBZ been VBN initialized VBN , , therefore RB template JJ metaprogramming NN can MD be VB seen VBN as IN a DT form NN of IN functional JJ programming NN . .
+In IN fact NN many JJ template NN implementations NNS only RB implement JJ flow NN control NN through IN recursion NN , , as IN seen VBN in IN the DT example NN below IN . .
+Though IN the DT syntax NN of IN template NN metaprogramming NN is VBZ usually RB very RB different JJ from IN the DT programming NN language NN it PRP is VBZ used VBN with IN , , it PRP
+is VBZ used VBN with IN , , it PRP has VBZ practical JJ uses NNS . .
+Some DT common JJ reasons NNS to TO use VB templates NNS are VBP to TO implement VB generic JJ programming NN ( ( avoiding VBG sections NNS of IN code NN which WDT are VBP similar JJ except IN
+sections NNS of IN code NN which WDT are VBP similar JJ except IN for IN some DT minor JJ variations NNS ) ) or CC to TO perform VB automatic JJ compile-time JJ optimization NN such JJ as IN doing VBG something NN once RB at IN compile JJ time NN rather RB
+once RB at IN compile JJ time NN rather RB than IN every DT time NN the DT program NN is VBZ run VBN for IN instance NN , , by IN having VBG the DT compiler NN unroll NN loops VBZ to TO eliminate VB jumps NNS and CC
+loops VBZ to TO eliminate VB jumps NNS and CC loop NN count NN decrements NNS whenever WRB the DT program NN is VBZ executed VBN . .
+What WP exactly RB " " programming VBG at IN compile-time JJ " " means NNS can MD be VB illustrated VBN with IN an DT example NN of IN a DT factorial JJ function NN , , which WDT
+a DT factorial JJ function NN , , which WDT in IN non-templated JJ C++ NNP can MD be VB written VBN using VBG recursion NN as IN follows VBZ : :
+int NN factorial NN ( ( int JJ n NN ) ) { ( if IN ( ( n JJ == NNP 0 CD ) ) return NN 1 CD ; : return NN n IN * JJ factorial JJ
+1 CD ; : return NN n IN * JJ factorial JJ ( ( n JJ - : 1 CD ) ) ; : } )
+void NN foo NN ( ( ) ) { ( int NN x NNP = NNP factorial JJ ( ( 4 CD ) ) ; : // VBN == NNP ( ( 4 CD * RB 3 CD * JJ
+( ( 4 CD * RB 3 CD * JJ 2 CD * JJ 1 CD * $ 1 CD ) ) == VBD 24int CD y NN = NNP factorial NN ( ( 0 CD ) ) ; : // CC == $ 0 CD ! .
+== RB 1 CD } )
+The DT code NN above IN will MD execute VB when WRB the DT program NN is VBZ run VBN to TO determine VB the DT factorial JJ value NN of IN the DT literals NNS 4 CD and CC
+of IN the DT literals NNS 4 CD and CC 0 CD . .
+Instead RB , , by IN using VBG template JJ metaprogramming NN and CC template VB specialization NN to TO provide VB the DT ending VBG condition NN for IN the DT recursion NN , , the DT factorials NNS
+the DT recursion NN , , the DT factorials NNS used VBN in IN the DT program NN , , ignoring VBG any DT factorial JJ not RB used VBN , , can MD be VB calculated VBN at IN compile-time NN by IN
+template NN struct NN Factorial NNP { ( enum NN { ( value NN = NNP N NNP * NNP Factorial NNP : : :value JJ } ) ; : } ) ; :
+template NN & CC gt NN ; : struct NN Factorial0 NNP & CC gt NN ; : { ( enum VB { ( value NN = VBZ 1 CD } ) ; : } ) ; :
+// NNP Factorial4 NNP & CC gt NN ; : : : :value VB == $ 24// CD Factorial0 NNP & CC gt NN ; : : : :value VB == $ 1void CD foo NN ( ( ) )
+== $ 1void CD foo NN ( ( ) ) { ( int NN x NNP = NNP Factorial4 NNP & CC gt NN ; : : : :value NN ; : // CC == $ 24int CD y NN = NNP Factorial0 NNP & CC gt NN ; :
+= NNP Factorial0 NNP & CC gt NN ; : : : :value NN ; : // CC == VB 1 CD } )
+The DT code NN above IN calculates VBZ the DT factorial JJ value NN of IN the DT literals NNS 4 CD and CC 0 CD at IN compile JJ time NN and CC uses VBZ the DT result NN
+compile JJ time NN and CC uses VBZ the DT result NN as IN if IN they PRP were VBD precalculated VBN constants NNS . .
+While IN the DT two CD versions NNS are VBP similar JJ from IN the DT point NN of IN view NN of IN the DT program NN 's POS functionality NN , , the DT first JJ example NN
+functionality NN , , the DT first JJ example NN calculates VBZ the DT factorials NNS at IN run NN time NN , , while IN the DT second JJ calculates VBZ them PRP at IN compile JJ time NN . .
+However RB , , to TO be VB able JJ to TO use VB templates NNS in IN this DT manner NN , , the DT compiler NN must MD know VB the DT value NN of IN its PRP$
+know VB the DT value NN of IN its PRP$ parameters NNS at IN compile JJ time NN , , which WDT has VBZ the DT natural JJ precondition NN that IN FactorialX NNP & CC gt NN ; : : : :value NN can MD only RB be VB
+FactorialX NNP & CC gt NN ; : : : :value NN can MD only RB be VB used VBN if IN X NNP is VBZ known VBN at IN compile JJ time NN . .
+In IN other JJ words NNS , , X NNP must MD be VB a DT constant JJ literal NN or CC a DT constant JJ expression NN , , such JJ as IN using VBG sizeof NN operator NN
+The DT factorial JJ example NN above IN is VBZ one CD example NN of IN compile-time JJ code NN optimization NN in IN that DT all DT factorials NNS used VBN by IN the DT program NN are VBP
+used VBN by IN the DT program NN are VBP pre-compiled JJ and CC injected VBN as IN numeric JJ constants NNS at IN compilation NN , , saving VBG both DT run-time JJ overhead NN and CC memory NN footprint NN . .
