@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the code for running concept extraction using pretrained models described in the paper "Concept Extraction Using Pointer-Generator Networks and Distant Supervision for Data Augmentation". The preview of the dataset used for training and evaluation of concept extraction models is included. The whole dataset can be downloaded from Google Drive (~600Mb): [concept_extraction_dataset.zip](https://drive.google.com/file/d/1p992LgEVV71vTXpH_vOekjHpndCnoj92/view?usp=sharing). Details about the models and the dataset can be found in the paper.
 
-Citation:
+Citation: \
 Shvets, A. and Wanner, L. 2020. Concept Extraction Using Pointer-Generator Networks and Distant Supervision for Data Augmentation. In International Conference on Knowledge Engineering and Knowledge Management. Springer, Cham.
 
 ![MSA](static/architecture.png)
