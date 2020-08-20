@@ -7,7 +7,7 @@ Citation:
 Shvets, A. and Wanner, L. 2020. Concept Extraction Using Pointer-Generator Networks and Distant Supervision for Data Augmentation. In International Conference on Knowledge Engineering and Knowledge Management. Springer, Cham.
 
 ![MSA](static/architecture.png)
-*The architecture of the proposed model.
+*The architecture of the proposed model.*
 
 ## Installation
 Install into Anaconda Python Environment (recommended) \
