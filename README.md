@@ -26,9 +26,9 @@ Step 3. Ensure pip is up-to-date:
 conda update pip
 ```
 
-Step 4. Run setup.py to install necessary dependencies for Python and to download pre-trained models:
+Step 4. Run setup.py to install necessary dependencies for Python and download pretrained models:
 ```
-cd ConceptExtraction
+cd ConceptExtraction/
 python setup.py
 ```
 or run manually:
