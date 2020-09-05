@@ -33,7 +33,7 @@ python setup.py
 ```
 or run manually:
 ```
-pip install -r requirements.txt --user
+pip install -r requirements.txt
 python download_models.py
 ```
 
