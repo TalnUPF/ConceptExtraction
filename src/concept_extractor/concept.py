@@ -7,6 +7,7 @@ class Concept:
         ADV: adverbs,
         VERB: verbs.
     """
-    def __init__(self, tokens_list, type_of_concept):
+    def __init__(self, tokens_list, type_of_concept, end_index):
         self.tokens = tokens_list
         self.type = type_of_concept
+        self.end_index = end_index

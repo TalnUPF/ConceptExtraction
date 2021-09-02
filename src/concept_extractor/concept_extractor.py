@@ -275,7 +275,8 @@ class ConceptExtractor:
                         already_used_indices.update(list(range(begin_index, end_index + 1)))
                         concepts_list.append(Concept(tokens_list=[self.sentences[sent_id][tok_i] for tok_i in
                                                                   range(begin_index, end_index + 1)],
-                                                     type_of_concept=concept_candidate_type))
+                                                     type_of_concept=concept_candidate_type,
+                                                     end_index=end_index))
             sentence_to_concepts_dict[sent_id]["concepts"] = concepts_list
 
         concepts_by_type_output = defaultdict(list)
@@ -286,6 +287,8 @@ class ConceptExtractor:
                                    "begin": concept.tokens[0].beg_offset,
                                    "end": concept.tokens[-1].end_offset,
                                    "type": concept.type,
+                                   "next_tag": self.sentences[int(sent_id)][concept.end_index + 1].postag if len(self.sentences[int(sent_id)])>concept.end_index + 1 else "EOS_tag",
+                                   "next_word": self.sentences[int(sent_id)][concept.end_index + 1].token if len(self.sentences[int(sent_id)])>concept.end_index + 1 else "EOS_token",
                                    "sent_id": sent_id}
                 if len(self.sentence_to_text_dict) > 0:
                     concept_details.update({"text_id": self.sentence_to_text_dict[sent_id]})
